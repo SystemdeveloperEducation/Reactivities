@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug API",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "../API/bin/Debug/net7.0/API.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/API",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug Application",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "../Application/bin/Debug/net7.0/Application.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Application",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug Domain",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "../Domain/bin/Debug/net7.0/Domain.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Domain",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug Persistence",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "../Persistence/bin/Debug/net7.0/Persistence.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Persistence",
+      "console": "internalConsole",
+      "stopAtEntry": false
+    }
+  ]
+}
