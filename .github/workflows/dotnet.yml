@@ -26,22 +26,3 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: version-net
-  # You may pin to the exact commit or the version.
-  # uses: vakus/dotnet-deployment-versioning@7f8f91c3fb0cdcf8acfe495845e5459c1f8b18da
-    - uses: vakus/dotnet-deployment-versioning@v1.3.1
-      with: 
-        # list of csproj files which should be bumped up.
-        dotnet_project_files: "**/*.cspro"
-        # should bump up automatically push changes. # optional, default is **/*.cspro
-        # should bump up automatically push changes.
-        auto_push: true # optional, default is true
-        # should bump up create new commit. If true will create new commit, otherwise will leave uncommited changes.
-        create_commit: true # optional, default is true
-        # Override default username used to make commit. Must match ^[a-zA-Z0-9\-]*$
-        commit_username: dotnet-deployment-versioning # optional, default is dotnet-deployment-versioning
-        # Override default email used to make commit. Must match ^[a-zA-Z0-9\-@\.]*$
-        commit_email: actions@users.noreply.github.com # optional, default is actions@users.noreply.github.com
-        # use --no-gpg-sign and --no-sign when committing
-        commit_force_no_gpg: false # optional, default is false
-            
